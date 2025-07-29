@@ -7,7 +7,7 @@ let loading = document.getElementById("loading");
 
 async function getData(cityName) {
   const promise = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=ff24614ef24b42d5b1f25425252607&q=${cityName}&aqi=yes`
+    `https://api.weatherapi.com/v1/current.json?key=ff24614ef24b42d5b1f25425252607&q=${cityName}&aqi=yes`
   );
   const data = await promise.json();
   console.log(data);
